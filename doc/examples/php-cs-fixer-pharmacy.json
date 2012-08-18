@@ -1,0 +1,18 @@
+{
+    "name": "php-cs-fixer.phar",
+    "stub": "php-cs-fixer-stub.php",
+    "version": "git",
+    "files": [
+        {
+            "ignoreVCS": true,
+            "name": "*.php",
+            "exclude": "Tests",
+            "in": ["vendor", "Symfony"]
+        },
+        {
+            "name": "LICENSE",
+            "in": "",
+            "depth": "0"
+        }
+    ]
+}

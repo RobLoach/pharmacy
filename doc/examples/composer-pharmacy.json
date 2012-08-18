@@ -1,0 +1,57 @@
+{
+    "name": "composer.phar",
+    "version": "git",
+    "stub": "composer-stub.php",
+    "files": [
+        {
+            "ignoreVCS": true,
+            "names": ["*.php"],
+            "notNames": ["Compiler.php", "ClassLoader.php"],
+            "in": ["src"]
+        },
+        {
+            "name": "ClassLoader.php",
+            "in": "src/Composer/Autoload",
+            "depth": "0",
+            "stripWhitespace": false
+        },
+        {
+            "name": "*.json",
+            "in": ["res"]
+        },
+        {
+            "name": "hiddeninput.exe",
+            "in": ["src/Composer/IO"],
+            "stripWhitespace": false
+        },
+        {
+            "ignoreVCS": true,
+            "names": ["*.php"],
+            "exclude": "Tests",
+            "notNames": ["Compiler.php"],
+            "in": [
+                "vendor/symfony",
+                "vendor/seld/jsonlint/src/",
+                "vendor/justinrainbow/json-schema/src/"
+            ]
+        },
+        {
+            "names": [
+                "autoload.php",
+                "autoload_namespaces.php",
+                "autoload_classmap.php",
+                "ClassLoader.php"
+            ],
+            "depth": "<= 1",
+            "in": [
+                "vendor"
+            ]
+        },
+        {
+            "name": "composer",
+            "in": "bin",
+            "depth": "0",
+            "preg_replace": { "{^#!/usr/bin/env php\\s*}": "" }
+        }
+    ]
+}

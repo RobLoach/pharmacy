@@ -1,0 +1,22 @@
+{
+    "name": "robloach/pharmacy",
+    "description": "Phar Archive Compiler",
+    "authors": [
+        {
+            "name": "Rob Loach",
+            "email": "robloach@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "2.1.*",
+        "symfony/finder": "2.1.*"
+    },
+    "require-dev": {
+        "fabpot/php-cs-fixer": "*@dev"
+    },
+    "autoload": {
+        "psr-0": { "Pharmacy": "src/" }
+    },
+    "bin": ["bin/pharmacy"],
+    "minimum-stability": "RC"
+}

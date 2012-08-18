@@ -1,0 +1,17 @@
+{
+    "name": "pharmacy.phar",
+    "version": "0.1.0",
+    "stub": "src/stub.php",
+    "files": [
+        {
+            "ignoreVCS": true,
+            "names": ["*.php"],
+            "in": ["src", "vendor"]
+        },
+        {
+            "name": "pharmacy",
+            "in": "bin",
+            "preg_replace": { "{^#!/usr/bin/env php\\s*}": "" }
+        }
+    ]
+}

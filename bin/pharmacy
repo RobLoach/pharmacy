@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+require dirname(__DIR__).'/src/bootstrap.php';
+
+use Pharmacy\Console\Application;
+
+error_reporting(-1);
+@ini_set('display_errors', 1);
+@ini_set('memory_limit', '512M');
+
+// run the command application
+$application = new Application();
+$application->run();
